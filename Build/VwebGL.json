@@ -1,0 +1,16 @@
+{
+"companyName": "Swin",
+"productName": "Veggies",
+"productVersion": "1.0",
+"dataUrl": "VwebGL.data.unityweb",
+"wasmCodeUrl": "VwebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "VwebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.17f1c1"
+}
