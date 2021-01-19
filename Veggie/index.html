@@ -1,25 +1,626 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
+ <!-- FlatFy Theme - Andrea Galanti /-->
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Veggies</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/VwebGL.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 540px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Veggies</div>
-      </div>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <title>Veggies – How is a game born</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
+	<script src="js/PIE_IE9.js"></script>  
+	<script src="js/PIE_IE678.js"></script>  
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+	
+	<!-- FullScreen -->
+    <div class="intro-header">
+		<div class="col-xs-12 text-center abcen1">
+			<div class="intro-title">
+				<img class="intro-title-img" src="img/intro/title.png" /></div> 
+			</div>
+			<!-- <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Flatfy</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Clean & minimal Theme</h3> -->
+			<ul class="list-inline intro-social-buttons">
+				<li><a href="https://sensyup.github.io/SiyingGuan.github.io/VeggiePlay/" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s" target="_blank"><span class="network-name">Play</span></a>
+				</li>
+				<li id="download" ><a href="https://github.com/sensyup/SiyingGuan.github.io/tree/main/Veggie" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s" target="_blank"><span class="network-name">GitHub Address</span></a>
+				</li>
+			</ul>
+		</div>    
+        <!-- /.container -->
+		<div class="col-xs-12 text-center abcen wow fadeIn">
+			<div class="button_down "> 
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+			</div>
+		</div>
     </div>
-  </body>
+	
+	<!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#home"><img src="img/intro/title.png" style="width: 80px"/></a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="menuItem"><a href="#whatis">Introduction</a></li>
+					<li class="menuItem"><a href="#useit">Core Gameplay Mechanisms</a></li>
+					<li class="menuItem"><a href="#screen">Art Style</a></li>
+					<li class="menuItem"><a href="#credits">Feedback</a></li>
+				</ul>
+			</div>
+		   
+		</div>
+	</nav> 
+	<div class="copyrights">Collect from <a href="http://www.freemuban.com/" >手机网站模板</a></div>
+	<!-- What is -->
+	<div id="whatis" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-12 text-center wrap_title">
+				<h2>Introduction</h2>
+				<p class="lead" style="margin-top:0">A special thanks to rural life.</p>
+				
+			</div>
+			
+			<div class="row">
+			
+				<!-- <div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
+				  <h3>Follow Me</h3>
+				  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+
+				  <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p>
+				</div> -->
+				<!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate iconImg" src="img/intro/tomato.png" alt="Generic placeholder image">
+				   <h3>Brief Introduction</h3>
+				   <p class="lead lead-justify">Veggies is a <b>casual puzzle game</b> with the core of selling vegetables. I wrote it during the COVID-19 pandemic last year. The main idea is to create a relaxing world to help people reduce anxiety. In the game, players' job is to place various kinds of vegetables where customers can easily get and buy. As players selling they will make profits. The final goal of the game is to meet the income target. </p>
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-8 wow fadeInDown text-center">
+				  <img  class="rotate iconImg" src="img/intro/pumpkin.png" alt="Generic placeholder image">
+				   <h3>Background</h3>
+					<p class="lead lead-justify">There's a beautiful village called "Vege Village", growed a girl called Lily. Unfortunately she is an orphan, but fortunately, under the care and love of the villagers, she has gradually grown into a lively and lovely girl. She runs in the fields every day, enjoying the smell of sunlight on vegetables. However, good time didn't last long. Due to the rapid development of the city, a lot of land was expropriated, the number of people in the village became less and less, and life became difficult. Lily will never allow her beloved Vege Village to disappear. She needs to earn money to repay the people who helped her. So she opened a vegetable shop in the town, and people liked the sweet and juicy vegetables growed in the Vege Village. Thanks to Lily's efforts, more and more people began to call for the preservation of the rural scenery of the Vegetable Village. </p>
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div>
+				<!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			<!-- /.row -->
+		</div>
+	</div>
+	
+	<!-- Use it -->
+    <div id ="useit" class="content-section-a">
+
+        <div class="container">
+			
+            <div class="row">
+			
+				<div class="col-sm-6 pull-right wow fadeInRightBig">
+                    <img class="img-responsive " src="img/intro/fullsetbg.png" alt="">
+                </div>
+				
+                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">High Concept Statement</h3>
+					<!-- <div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div> -->
+                    <p class="lead">
+						When you first see this game, you may think that it is a match-3 game. Match-3 games are very popular in the market due to their simplicity and easy-to-handle characteristics, but there are not many variants of match-3 games . So I hope to retain the <b>easy-to-handle characteristics</b> of match-3 games in this game, and allow players use their wisdom and strategy to achieve a greater <b>sense of accomplishment</b> from the exploration of playing method.
+					</p>
+
+					 <!-- <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
+					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p> -->
+				</div>   
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+    <div class="content-section-b"> 
+		
+		<div class="container">
+            <div class="row">
+					<div class="col-sm-6 wow fadeInLeftBig">
+							<h3 class="section-heading">Mind Map</h3>
+							<div style="width:100%;height:450px;float:left;" id="chartMindMap"></div>
+						</div>
+				
+                <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
+					<h3 class="section-heading">Schematic Illustration</h3>
+					<a href="img/intro/io.png" class="image-link"><img class="img-responsive" style="margin-top: 50px;" src="img/intro/io.png" alt=""></a>
+                    
+				</div>  			
+			</div>
+        </div>
+    </div>
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+             <div class="row">
+			 
+				<div class="col-sm-7 pull-right wow fadeInRightBig">
+                    <div style="width:100%;height:450px;float:left;padding-top: 40px" id="chartmain"></div>
+                </div>
+			 
+                <div class="col-sm-5 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Numerical Mechanics</h3>
+                    <p class="lead">Players can try to eliminate multiple columns at the same time. Multiple columns elimination takes up more time so that it is a high-risk activity. 
+						I designed a high return for achieving multiple columns elimination to reward this kind of risk. 
+						Lots of test and adjustment were done by me and the figure on the right shows the final difficulty and yield data when multiple columns were eliminated simultaneously. <b>As you can see, the final difficulty and yield are almost proportional. Therefore, players can choose their own strategy freely without worry about return.</b>
+					</p>
+				</div>           
+			</div>
+			
+			<div class="row">
+			 
+					<div class="col-sm-7 pull-right wow fadeInRightBig">
+						<div style="width:100%;height:450px;float:left;padding-top: 40px" id="chartStar"></div>
+					</div>
+				 
+					<div class="col-sm-5 wow fadeInLeftBig"  data-animation-delay="200">
+						<p class="lead">Combined with friendly score levels, both single-column elimination preferred players and multi-columns elimination preferred players can complete their goal successfully.  
+						</p>
+					</div>           
+				</div>
+        </div>
+
+    </div>
+
+	<!-- Screenshot -->
+	<div id="screen" class="content-section-b">
+        <div class="container">
+          <div class="row" >
+			 <div class="col-md-12  text-center wrap_title ">
+				<h2>Art Style</h2>
+				<div class="row">
+			
+						
+						<div class="col-sm-6 wow fadeInDown text-center">
+						  <img class="rotate iconImg" src="img/intro/carrot.png" alt="Generic placeholder image">
+						   <h3>Vision</h3>
+						   <p class="lead lead-justify">The game used 2D hand-painted style in general, with fresh and bright colors to convey a peaceful and refreshing keynote. The vegetables are designed to be red, orange, bright green and other warm colors to show it's sweet and delicious. A large area in the center is left white to make it easy for players to recognize and focus on the main elements.</p>
+						   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+						</div><!-- /.col-lg-4 -->
+						<div class="col-sm-6 wow fadeInDown text-center">
+								<img class="rotate iconImg" src="img/intro/cabbage.png" alt="Generic placeholder image">
+								 <h3>Audio</h3>
+								 <p class="lead lead-justify">I chose and bought this light music to convey a idea of relaxing in my game. Its main melody uses a lot of lovely whistling sound, just like the relaxing life in a small town.</p>
+								 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+							  </div><!-- /.col-lg-4 -->
+				</div>
+						
+			 </div>
+		  </div>
+        </div>
+
+
+	</div>
+	
+
+	
+	<!-- Credits -->
+	<div id="credits" class="content-section-a">
+		<div class="container">
+			<div class="row">
+			
+			<div class="col-md-12 text-center wrap_title">
+				<h2>Feedback</h2>
+			 </div>
+		
+			 <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200" style="margin-top: 50px;">   
+				<h3 class="section-heading">Player Reaction</h3>
+				<p class="lead" style="height: 200px">Here's a playing reaction from my friend. From a real player's reaction, we can find merits and demerits about my game.</b>
+				</p>
+			</div>
+			<div class="col-sm-6 wow fadeInRightBig" style="margin-top: 50px;">
+				<video style="width: 100%" src="img/screenshot.mp4" controls="controls">Sorry! Your browser doesn't support video. Please try another browser like Chrome.</video>
+			</div>
+		 
+		  </div>
+		</div>
+		<div class="container">
+		<div class="row">
+						<div class="col-md-4 wow col-xs-offset-2 fadeInLeftBig"  data-animation-delay="200">   
+								<h3 class="section-heading"></h3>
+								<a href="img/intro/howtoplay1.png" class="image-link"><img class="img-responsive" style="height: 500px" src="img/intro/howtoplay1.png" alt=""></a>
+								
+							</div>
+					<div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200" style="margin-top: 50px;">   
+						<h3 class="section-heading">Adjustment & Future Plan</h3>
+						<p class="lead" style="height: 200px">The first adjustment is about the "how to play" instruction. I found that my friends need time to learn. The problem is, at the beginning, the "how to play" instruction is hard to understand. So I simplified and adjusted it according to feedback from my friends. The final result is the left one. I use images instead of text to illustrate and now they can understand easily. </b>
+						</p>
+						<p class="lead" style="height: 200px">According to feedback, I will <b>add more levels</b> to make it more challenging. Also, I plan to <b> change the sunlight effect of the background</b> to reveal the change of time more realistically and make the visual effect richer. This work will be done in this month.</b>
+						</p>
+		</div>
+	</div>
+	</div>
+    <footer>
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-6 pull-right">
+			<h3 class="footer-title">Thanks for reading!</h3>
+			Email: guansycn@163.com<br/>
+            <p style="margin-bottom: 50px;">If you have any questions, please feel free to contact!<br/>
+            </p>
+	   
+          </div> <!-- /col-xs-7 -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<!-- StikyMenu -->
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+		  
+		});
+	  });
+	  
+	  window.onload = function (){
+		//指定图表的配置项和数据
+		data1 = [["1 Column",3],["2 Columns",6],["3 Columns",10],["4 Columns",17],["5 Columns",25],["6 Columns",38],];
+		data2 = [["1 Column",1],["2 Columns",1.5],["3 Columns",3],["4 Columns",6],["5 Columns",8],["6 Columns",15],];
+
+
+var dateList1 = data1.map(function (item) {
+    return item[0];
+});
+var valueList1 = data1.map(function (item) {
+    return item[1];
+});
+var dateList2 = data2.map(function (item) {
+    return item[0];
+});
+var valueList2 = data2.map(function (item) {
+    return item[1];
+});
+
+option = {
+	color: ['#c23531','#e7af3c'],
+    // Make gradient line here
+    visualMap: [{
+        show: false,
+        type: 'category',
+        seriesIndex: 0,
+        min: 0,
+        // max: 400
+    }, {
+        show: false,
+        type: 'category',
+        seriesIndex: 1,
+        min: 0,
+        // max: dateList.length - 1
+    }],
+
+
+    title: [{
+        left: 'center',
+        text: 'Difficulty'
+    }, {
+        top: '55%',
+        left: 'center',
+        text: 'Yield'
+    }],
+    tooltip: {
+        trigger: 'axis'
+    },
+    xAxis: [{
+        data: dateList1,
+		name: 'Columns matched',
+		axisLabel: {interval:0,rotate:40 },
+    }, {
+        data: dateList2,
+        gridIndex: 1,
+		name: 'Columns matched',
+		axisLabel: {interval:0,rotate:40 }
+    }],
+    yAxis: [{
+        splitLine: {show: false},
+		name: 'Steps per piece',
+    }, {
+        splitLine: {show: false},
+        gridIndex: 1,
+		name: 'Score per piece',
+    }],
+    grid: [{
+        bottom: '60%',
+    	right: '20%',
+        containLabel: true
+    }, {
+        top: '60%',
+		// bottom: '60%',
+    	right: '20%',
+        containLabel: true
+    }],
+    series: [{
+        type: 'line',
+        showSymbol: false,
+        data: valueList1,
+		
+    }, {
+        type: 'line',
+        showSymbol: false,
+        data: valueList2,
+        xAxisIndex: 1,
+        yAxisIndex: 1
+    }]
+};
+
+var data = [['1 Star(game goal)', 12000], ['2 Stars', 24000], ['3 Stars', 36000]];
+var dateList = data.map(function (item) {
+    return item[0];
+});
+var valueList = data.map(function (item) {
+    return item[1];
+});
+optionStar = {// Make gradient line here
+    visualMap: [{
+        show: false,
+        type: 'category',
+        seriesIndex: 0,
+        min: 0,
+        // max: 400
+    }],
+
+
+    title: [{
+        left: 'center',
+        text: 'Goal Design'
+    }],
+    tooltip: {
+        trigger: 'axis'
+    },
+    xAxis: [{
+        data: dateList,
+		name: 'Number of Stars',
+		axisLabel: {interval:0,rotate:40 },
+    }],
+    yAxis: [{
+        splitLine: {show: false},
+		name: 'Score',
+    }],
+    grid: [{
+        bottom: '40%',
+    	right: '20%',
+        containLabel: true
+    }],
+    series: [{
+        type: 'line',
+        showSymbol: false,
+        data: valueList,
+    }]
+	};
+	var minddata = {
+ "name": "Veggies",
+ "children": [
+ 	{
+		"name": "Grid",
+		"children":[
+			{
+				"name": "Vegetables",
+				"children": [
+					{"name": "BROCCOLI", "value": 300},
+					{"name": "CABBAGE", "value": 300},
+					{"name": "CARROT", "value": 300},
+					{"name": "MUSHROOM", "value": 300},
+					{"name": "OION", "value": 300},
+					{"name": "POTATO", "value": 300},
+					{"name": "PUMPKIN", "value": 300},
+					{"name": "TOMATO", "value": 300},
+					{"name": "ANY", "value": 600},
+				],
+			},
+			{
+				"name": "Player Interaction",
+				"children": [
+					{"name": "Scorll Left"},
+					{"name": "Scorll Top"},
+					{"name": "Scorll Right"},
+					{"name": "Scorll Bottom"},
+				]
+			},
+			{
+				"name": "Reaction",
+				"children": [
+					{"name": "Normal"},
+					{"name": "Replenish"},
+					{"name": "Disappear"},
+				]
+			}
+
+		]
+	},
+	{
+		"name": "Recipe",
+		"children":[
+			{
+				"name": "Vegetables",
+				"children": [
+					{"name": "BROCCOLI",},
+					{"name": "CABBAGE",},
+					{"name": "CARROT", },
+					{"name": "MUSHROOM", },
+					{"name": "OION", },
+					{"name": "POTATO", },
+					{"name": "PUMPKIN",},
+					{"name": "TOMATO",},
+				],
+			},
+			{
+				"name": "Interaction",
+				"children": [
+					{"name": "Refresh"},
+					{"name": "Normal"},
+				]
+			},
+		]		
+	},
+	
+	{
+		"name": "UI",
+		"children":[
+			{
+				"name": "Time",
+				"value": 180,
+			},
+			{
+				"name": "Current income",
+				"children": [{
+					"name": "Behavior",
+					"children": [{
+						"name": "default",
+						"value": 0,
+					},{
+						"name": "increase",
+					}]
+				}]
+			},
+			{
+				"name": "Target income",
+				"value": 12000,
+			},
+			{
+				"name": "Grade",
+				children: [{
+					name: "1 Star",
+					value: 12000,
+				}, {
+					name: "2 Stars",
+					value: 24000,
+				}, {
+					name: "3 Stars",
+					value: 36000
+				}]
+			}
+		]
+	}
+   ],
+}
+
+	optionMind = {
+        tooltip: {
+            trigger: 'item',
+            triggerOn: 'mousemove'
+        },
+        series: [
+            {
+                type: 'tree',
+
+                data: [minddata],
+
+                top: '1%',
+                left: '7%',
+                bottom: '1%',
+                right: '20%',
+
+                symbolSize: 7,
+
+                label: {
+                    position: 'left',
+                    verticalAlign: 'middle',
+                    align: 'right',
+                    fontSize: 9
+                },
+
+                leaves: {
+                    label: {
+                        position: 'right',
+                        verticalAlign: 'middle',
+                        align: 'left'
+                    }
+                },
+
+                expandAndCollapse: true,
+                animationDuration: 550,
+                animationDurationUpdate: 750
+            }
+        ]
+	};
+			//获取dom容器
+			var myChart = echarts.init(document.getElementById('chartmain'));
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.setOption(option);
+
+
+			var chartStar = echarts.init(document.getElementById('chartStar'));
+			chartStar.setOption(optionStar);
+
+			var chartMindMap = echarts.init(document.getElementById('chartMindMap'));
+			chartMindMap.setOption(optionMind);
+}
+
+	
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script> 
+	<script src="js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="js/classie.js"></script>
+	<script src="js/uiMorphingButton_inflow.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.js"></script> 
+</body>
+
 </html>
