@@ -31,6 +31,27 @@
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
+.footer-img {
+	height: 178px;
+	width: 178px;
+	position: absolute; 
+	right: -15px; 
+	bottom: 0px;
+	background: url("../img/icon/circle.png");
+	background-size: cover;
+	-moz-transform:rotate(90deg); 
+-webkit-transform:rotate(90deg);
+transform:rotate(90deg);
+filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+.footer-link:hover .footer-img{
+		background: url("../img/icon/text.png");
+		background-size: cover;
+		-moz-transform:rotate(0deg); 
+		-webkit-transform:rotate(0deg);
+		transform:rotate(0deg);
+		filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
 
 #top-nav.navbar .nav > li > a.download-on{
 	background-color: #ff8a3c;
